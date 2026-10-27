@@ -32,6 +32,10 @@
     "./panel": {
       "types": "./dist/panel.d.ts",
       "import": "./dist/panel.js"
+    },
+    "./modTree": {
+      "source": "./src/modTree.ts",
+      "default": "./src/modTree.ts"
     }
   },
   "dependencies": {
