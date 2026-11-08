@@ -42,6 +42,7 @@
     "@foss-earth/about": "0.1.0"
   },
   "devDependencies": {
+    "tsrs": "0.23.0-ts7.1.0-beta",
     "typescript": "5.9.3",
     "vitest": "4.1.6",
     "@types/node": "24.12.4",
@@ -50,7 +51,7 @@
     "@eslint/js": "9.39.4"
   },
   "scripts": {
-    "typecheck": "tsc -p tsconfig.json --noEmit --incremental --tsBuildInfoFile node_modules/.tmp/typecheck.tsbuildinfo",
+    "typecheck": "tsrs -p tsconfig.json --noEmit --incremental --tsBuildInfoFile node_modules/.tmp/typecheck.tsbuildinfo",
     "lint": "eslint src tests --cache --cache-strategy content --cache-location node_modules/.cache/eslint/",
     "test": "vitest run --config vitest.config.mjs --maxWorkers=50%",
     "build": "tsc -p tsconfig.build.json"
